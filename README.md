@@ -38,7 +38,6 @@ Make sure you have **Node.js** installed. You can download it [here](https://nod
     npm install
 
 ### Running Tests
-
 To run the tests, simply use the following command:
     ```bash
     npm test
@@ -46,33 +45,28 @@ This will execute all the test cases in the project using Jest.
 
 ### Example Usage
 Here are some examples of how the String Calculator works:
-Empty string:
-    ```js
+
+    Empty string:
     add(""); // Output: 0
-
-Single number:
-    ```js
+    
+    Single number:
     add("1"); // Output: 1
-
-Two numbers:
-    ```js
+    
+    Two numbers:
     add("1,2"); // Output: 3
-
-Multiple numbers:
-    ```js
+    
+    Multiple numbers:
     add("1,2,3"); // Output: 6
-
-New line as a delimiter:
-    ```js
+    
+    New line as a delimiter:
     add("1\n2,3"); // Output: 6
-
-Custom delimiter:
-    ```js
+    
+    Custom delimiter:
     add("//;\n1;2"); // Output: 3
-
-Negative numbers throw an exception::
-    ```js
+    
+    Negative numbers throw an exception:
     add("1,-2,3"); // Throws: "negative numbers not allowed -2"
+    
 
 ### Implementation Details
 This project was developed using Node.js and the Jest testing framework, adhering strictly to TDD principles. Each feature was introduced by first writing tests and ensuring the code passes after implementation. The project was built incrementally, refactoring after each passing test.
