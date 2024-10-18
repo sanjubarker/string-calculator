@@ -15,7 +15,7 @@ const add = (numbers) => {
 
     const negativeNumbers = numArray.filter(num => parseInt(num) < 0);
     if (negativeNumbers.length > 0) {
-        return `negative numbers not allowed ${negativeNumbers.join(',')}`
+        throw new Error(`negative numbers not allowed ${negativeNumbers.join(',')}`)
     }
 
     return numArray.reduce((sum, current) => sum + parseInt(current || 0), 0);
